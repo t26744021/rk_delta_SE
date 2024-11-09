@@ -7,19 +7,19 @@
     
     - **Why does rk_delta_SE also use the Modbus TCP protocol,and what are its advantages?**
     
-        Optimization projects:
+            Optimization projects:
 
-        1.Address Jump Issue : Delta PLC Modbus address planning is discontinuous. <br>
-                                For example : M1535 (address 0x0Dff) and M1536 (address_0xB000) or 
-                                                D4095 (address_0x1FFF) and D4096 (address_0x9000).
-                                This limits "batch read/write" operations.
+            1.Address Jump Issue : Delta PLC Modbus address planning is discontinuous. <br>
+                                    For example : M1535 (address 0x0Dff) and M1536 (address_0xB000) or 
+                                                    D4095 (address_0x1FFF) and D4096 (address_0x9000).
+                                    This limits "batch read/write" operations.
 
-        2.Word/Dword Sign : Add Word/Dword calculations for signed/unsigned.
-        
+            2.Word/Dword Sign : Add Word/Dword calculations for signed/unsigned.
+            
 
-        3.KeepAlive : By default,the Delta PLC will automatically disconnect if no data is send within 120 seconds.
-                        For example,if the "user" writes a program that makes an indicator light blink alternately every 130 seconds, 
-                        the PLC will disconnect due to the timeout,add the KeepAlive long-connection feature, users can easily maintain continuous operation and avoid disconnection.
+            3.KeepAlive : By default,the Delta PLC will automatically disconnect if no data is send within 120 seconds.
+                            For example,if the "user" writes a program that makes an indicator light blink alternately every 130 seconds, 
+                            the PLC will disconnect due to the timeout,add the KeepAlive long-connection feature, users can easily maintain continuous operation and avoid disconnection.
 
 
 - **Support PLC**：
