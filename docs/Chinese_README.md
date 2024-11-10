@@ -43,10 +43,10 @@
 
     - **步驟-2 : 安裝 / 移除 rk_delta_SE ( Raspberr PI OS 64-bit )**
         ```python
-        pip install dist/rk_mcprotocol-0.0.2-py3-none-any.whl --break-system-packages
+        pip install dist/rk_delta_SE-0.0.1-py3-none-any.whl --break-system-packages
         ```
         ```python
-        pip uninstall rk_mcprotocol --break-system-packages
+        pip uninstall rk_delta_SE --break-system-packages
         ```
         Example : rk@raspberrypi:~/rkmcprotocol $ pip install dist/rk_mcprotocol-0.0.2-py3-none-any.whl --break-system-packages<br>
 
