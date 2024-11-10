@@ -4,21 +4,19 @@
 
 
 - **前 言**：
-    
-    - **rk_delta_SE相同也是使用Modbus TCP協議,優點為何?**
+     
+    - **下述為套件優化項目:**
 
-            下述為套件優化項目:
+        1.跳址問題 : Delta_PLC在Modbus_address規劃不連續排列 (M/D元件)
+                    例如:M1535(address_0x0DFF) 跟 M1536(address_0xB000) or D4095(address_0x1FFF) 跟 D4096(address_0x9000)
+                    限制"批量讀取/批量寫入"的操作。
 
-            1.跳址問題 : Delta_PLC在Modbus_address規劃不連續排列 (M/D元件)
-                        例如:M1535(address_0x0DFF) 跟 M1536(address_0xB000) or D4095(address_0x1FFF) 跟 D4096(address_0x9000)
-                        限制"批量讀取/批量寫入"的操作。
+        2.Word/Dword正負符號 : 加入 Word/Dword,讀取/寫入正負符號計算。
 
-            2.Word/Dword正負符號 : 加入 Word/Dword,讀取/寫入正負符號計算。
-
-            3.Dword計算 : 加入 Dword 的讀取/寫入計算。
-            
-            4.KeepAlive長連線 : Delta PLC 預設當連線閒置超過 120 秒未傳送訊號時，將自動斷線。例如，若「使用者」編成程式:每 130 秒
-                                交替閃爍指示燈，則會因超時而被 PLC 切斷連線。除非使用者採取其他方法維持長連線。
+        3.Dword計算 : 加入 Dword 的讀取/寫入計算。
+        
+        4.KeepAlive長連線 : Delta PLC 預設當連線閒置超過 120 秒未傳送訊號時，將自動斷線。例如，若「使用者」編成程式:每 130 秒
+                            交替閃爍指示燈，則會因超時而被 PLC 切斷連線。除非使用者採取其他方法維持長連線。
 
 - **支援 PLC**：
     
