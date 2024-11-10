@@ -34,7 +34,6 @@
     - **步驟-1 : 設定PLC環境**
         ```python
             IP   : 192.168.3.100
-            PORT : 1025 ( TCP )
         ```
         ![Example Image](../images/p1.png)
 
@@ -152,12 +151,12 @@
     
 - **Q&A**：
 
-    - **為何套件程式使用 import threading**
+    - **為何使用 import threading**
     
         A : 連線Detla PLC後超過超過120秒，若未再次發送任何訊息，Detla PLC將會主動斷開連線，
             所以為了保持長連線模式，若使用者在110秒內無發送訊息，內部threading將會觸發保持連線<br>
 
-    - **為何套件程式使用 import time**
+    - **為何使用 import time**
 
         A : 同上
 
