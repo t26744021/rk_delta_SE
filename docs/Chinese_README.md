@@ -35,13 +35,12 @@
         ```python
             IP   : 192.168.3.100
         ```
-        ![Example Image](../images/p1.png)
 
     - **步驟-2 : 安裝 rk_delta_SE ( Windows )**
         ```python
         pip install dist/rk_delta_SE-0.0.1-py3-none-any.whl
         ```
-        
+
     - **步驟-2 : 安裝 / 移除 rk_delta_SE ( Raspberr PI OS 64-bit )**
         ```python
         pip install dist/rk_mcprotocol-0.0.2-py3-none-any.whl --break-system-packages
