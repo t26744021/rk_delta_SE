@@ -8,6 +8,9 @@
     
     Delta-SE Series (Ethernet)
 
+- **使用協議格式 / Use the protocol format**：
+
+    Modbus TCP
 
 ## Language / 語言
 
