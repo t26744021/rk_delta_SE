@@ -39,7 +39,7 @@
 
     - **步驟-2 : 安裝 rk_delta_SE ( Windows )**
         ```python
-        pip install dist/rk_mcprotocol-0.0.2-py3-none-any.whl
+        pip install dist/rk_delta_SE-0.0.1-py3-none-any.whl
         ```
         Example : C:\Users\Downloads\rkmcprotocol-main>pip install dist/rk_mcprotocol-0.0.2-py3-none-any.whl
 
