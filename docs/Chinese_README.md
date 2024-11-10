@@ -6,7 +6,7 @@
 
 - **優化項目:**
 
-    **跳址問題**     
+    - **跳址問題**     
             Delta PLC 的 Modbus 地址（如 M/D 元件）並非連續排列，例如： 
             M1535 (address_0x0DFF)與M1536 (address_0xB000)  
             D4095 (address_0x1FFF)與D4096 (address_0x9000)  
