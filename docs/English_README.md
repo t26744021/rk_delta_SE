@@ -2,24 +2,25 @@
     
     Python Connect to Delta-SE Series for "Read" and "Write" Functions <br>
 
-
-- **Preface**：
+ 
+- **Optimization Items:**
     
-    - **Why does rk_delta_SE also use the Modbus TCP protocol,and what are its advantages?**
-    
-            Optimization projects:
+    - **Address Jump Issue:**<br>
 
-            1.Address Jump Issue : Delta PLC Modbus address planning is discontinuous. <br>
-                                    For example : M1535 (address 0x0Dff) and M1536 (address_0xB000) or 
-                                                    D4095 (address_0x1FFF) and D4096 (address_0x9000).
-                                    This limits "batch read/write" operations.
+        Delta PLC Modbus address planning is discontinuous.<br>
+        For example : M1535 (address 0x0Dff) and M1536 (address_0xB000)<br>                                        
+        This limits "batch read/write" operations.<br>
 
-            2.Word/Dword Sign : Add Word/Dword calculations for signed/unsigned.
+    - **Word/Dword Sign:**<br> 
+
+        Add Word/Dword calculations for signed/unsigned.<br>
+        
+
+    - **KeepAlive:**<br> 
             
-
-            3.KeepAlive : By default,the Delta PLC will automatically disconnect if no data is send within 120 seconds.
-                            For example,if the "user" writes a program that makes an indicator light blink alternately every 130 seconds, 
-                            the PLC will disconnect due to the timeout,add the KeepAlive long-connection feature, users can easily maintain continuous operation and avoid disconnection.
+        By default,the Delta PLC will automatically disconnect if no data is send within 120 seconds.<br>
+        For example,if the "user" writes a program that makes an indicator light blink alternately every 130 seconds,<br> 
+        the PLC will disconnect due to the timeout,add the KeepAlive long-connection feature, users can easily maintain continuous operation and avoid disconnection.<br>
 
 
 - **Support PLC**：
@@ -30,10 +31,9 @@
 
     - **Step-1 : Configure**
         ```python
-            IP   : 192.168.3.100
+            IP : 192.168.3.100
 
         ```
-        ![Example Image](../images/p1.png)
 
     - **Step-2 : Install rk_delta_SE ( Windows )**
         ```python
