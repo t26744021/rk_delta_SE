@@ -8,8 +8,7 @@
     - **Address Jump Issue:**<br>
 
         Delta PLC Modbus address planning is discontinuous.<br>
-        For example : M1535(address 0x0Dff) and M1536(address_0xB000)<br>                                        
-        This limits "batch read/write" operations.
+        For example : M1535(address 0x0Dff) and M1536(address_0xB000)<br>                                        This limits "batch read/write" operations.
 
     - **Word/Dword Sign:**<br> 
 
