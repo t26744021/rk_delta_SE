@@ -167,6 +167,7 @@
         ※Note    : While 8 ports are available , it is genrally not recommended to use them all . 
                 Typically,one port is already occupied by the PLC user's connection , User need to know the number of ports in use , otherwise connections may fail .
 
+    
     ![Example Image](../images/p1.png)
 
  
