@@ -164,7 +164,7 @@
         Reference : DVP-ES2/EX2/EC5/SS2/SA2/SX2/SE&TP Operation Manual - Programming (Page B-2)  : <br>
                     Although Modbus TCP operates in half-duplex mode , the PLC itself supports multitasking with 8 available client ports.
                
-          ※Note  : While 8 ports are available , it is genrally not recommended to use them all . 
-                    Typically,one port is already occupied by the PLC user's connection , User need to know the number of ports in use , otherwise connections may fail .
+        ※Note    : While 8 ports are available , it is genrally not recommended to use them all . 
+                Typically,one port is already occupied by the PLC user's connection , User need to know the number of ports in use , otherwise connections may fail .
 
  
